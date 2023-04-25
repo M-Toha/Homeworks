@@ -48,12 +48,13 @@ def hats_on_cats(nr_rounds_and_cats: int) -> list:
     list:    a list of cat's numbers, who are wearing hats after n rounds
     '''
     i = 1
-    list_of_numbers = list()
+    list_of_numbers = [] #краще створювати списки так, а не через list()
     while i ** 2 <= nr_rounds_and_cats:
         list_of_numbers.append(i ** 2)
         i += 1
     return list_of_numbers
 
 assert hats_on_cats(100) == [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+print(hats_on_cats(100))
 
 
